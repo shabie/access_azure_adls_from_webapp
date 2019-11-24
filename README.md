@@ -21,3 +21,5 @@ adls_creds = lib.auth(tenant_id=tenant_id,
 adlsfs = core.AzureDLFileSystem(adls_creds, 'YOUR_ADLS_NAME')
 adlsfs.listdir('/')  # sanity check: returns the root folder contents of the ADLS
 ```
+
+Environment variables in the Web App in Azure can be set using the __Application Settings__. See this link for details: https://docs.microsoft.com/en-us/azure/app-service/configure-common
